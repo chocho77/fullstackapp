@@ -7,8 +7,14 @@ import { BrowserRouter as Router, Routes, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
+      <Router>
       <Navbar />
+
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+      </Routes>
       <Home />
+      </Router>
     
     </div>
   );
