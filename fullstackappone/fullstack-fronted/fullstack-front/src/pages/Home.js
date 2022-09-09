@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function Home() {
+
+    const [users,setUsers] = useState([]);
+
+    useEffect(()=>{
+        console.log("Code With Chavdar.");
+    });
+
+
   return (
     <div className='container'>
         <div className='py-4'>
