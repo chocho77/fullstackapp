@@ -1,5 +1,7 @@
 package com.codewithchavdar.fullstackbackend.userservice;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,4 +18,7 @@ public class UserService {
         return userRepository.save(newUser);
     }
 
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
+    }
 }
