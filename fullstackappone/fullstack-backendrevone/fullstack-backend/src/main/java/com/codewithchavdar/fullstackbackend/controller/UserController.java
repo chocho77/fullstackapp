@@ -6,18 +6,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.codewithchavdar.fullstackbackend.model.User;
-import com.codewithchavdar.fullstackbackend.repository.UserRepository;
+import com.codewithchavdar.fullstackbackend.userservice.UserService;
 
 @RestController
 public class UserController {
 
     @Autowired
-    private UserRepository userRepository;
-
+    UserService userService;
 
     @PostMapping("/user")
     User newUser(@RequestBody User newUser) {
-        return userRepository.save(newUser);
+        return userService.save(newUser);
     }
-    
+
 }
