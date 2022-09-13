@@ -1,6 +1,9 @@
+import axios from "axios"
 import React, { useState } from 'react'
 
 export default function AddUser() {
+
+    let navigate=useNavigate()
 
     const [user,setUser]=useState({
         name:"",
@@ -16,7 +19,10 @@ export default function AddUser() {
 
     }
 
-    const onSubmit=(e)=>{
+    const onSubmit=async (e)=>{
+        e.preventDefault();
+        await axios.post("http://localhost:8080/user")
+
 
     }
 
