@@ -1,10 +1,13 @@
 import axios from "axios";
 import React,{ useState } from 'react';
-import { Link,useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Link,useNavigate, useParams } from "react-router-dom";
 
 export default function EditUser() {
 
-    let navigate=useNavigate()
+    let navigate=useNavigate();
+
+    const {id}=useParams()
 
     const [user,setUser]=useState({
         name: "",
@@ -15,16 +18,24 @@ export default function EditUser() {
     const { name,username,email }=user
 
     const onInputChange=(e) => {
-
         setUser({ ...user,[e.target.name]: e.target.value })
+    };
 
-    }
+    useEffect(()=>{
+        loadUser();
+
+    }, []);
 
     const onSubmit=async (e) => {
         e.preventDefault();
-        await axios.post("http://localhost:8080/user",user)
-        navigate("/")
+        await axios.put("http://localhost:8080/user",user)
+        navigate("/");
 
+    };
+
+    const loadUser=async ()=>{
+        const result=await axios.get(`http://localhost:8080/user/${id}`);
+        setUser(result.data);
     }
 
     return (
