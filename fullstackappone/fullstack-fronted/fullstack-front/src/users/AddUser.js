@@ -18,25 +18,25 @@ export default function AddUser() {
                         
                     </div>
                      <div className="mb-3">
-                        <label htmlFor="Name" clasName="form-label">
-                            Name
+                        <label htmlFor="username" clasName="form-label">
+                            Username
                         </label>
                         <input
                         type={"text"}
                         className="form-control"
-                        placeholder="Enter your name"
-                        name="name"/>
+                        placeholder="Enter your username"
+                        name="username"/>
                         
                     </div>
                      <div className="mb-3">
-                        <label htmlFor="Name" clasName="form-label">
-                            Name
+                        <label htmlFor="email" clasName="form-label">
+                            E-mail
                         </label>
                         <input
                         type={"text"}
                         className="form-control"
-                        placeholder="Enter your name"
-                        name="name"/>
+                        placeholder="Enter your e-mail address"
+                        name="email"/>
                         
                     </div>
                 </div>
