@@ -12,7 +12,11 @@ export default function AddUser() {
 
     const onInputChange=(e)=>{
 
-        setUser({[e.target.name]:e.target.value})
+        setUser({...user,[e.target.name]:e.target.value})
+
+    }
+
+    const onSubmit=(e)=>{
 
     }
 
@@ -21,6 +25,7 @@ export default function AddUser() {
             <div className="row">
                 <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
                     <h2 className="text-center m-4">Register User</h2>
+                    <form>
                     <div className="mb-3">
                         <label htmlFor="Name" clasName="form-label">
                             Name
@@ -32,8 +37,7 @@ export default function AddUser() {
                         name="name"
                         value={name}
                         onChange={(e)=>onInputChange(e)}
-                        />
-                        
+                        />   
                     </div>
                      <div className="mb-3">
                         <label htmlFor="Username" clasName="form-label">
@@ -46,10 +50,9 @@ export default function AddUser() {
                         name="username"
                         value={username}
                         onChange={(e)=>onInputChange(e)}
-                        />
-                        
+                        />    
                     </div>
-                     <div className="mb-3">
+                    <div className="mb-3">
                         <label htmlFor="email" clasName="form-label">
                             E-mail
                         </label>
@@ -61,16 +64,17 @@ export default function AddUser() {
                         value={email}
                         onChange={(e)=>onInputChange(e)}
                         />
+                    </div>
                         <button type="submit" className="btn btn-outline-primary">
                             Submit
                         </button>
                         <button type="submit" className="btn btn-outline-danger mx-2">
                             Cancel
                         </button>
-                    </div>
+                    </form>
                 </div>
-
             </div>
         </div>
+              
     )
 }
