@@ -14,18 +14,20 @@ export default function AddUser() {
                         type={"text"}
                         className="form-control"
                         placeholder="Enter your name"
-                        name="name"/>
+                        name="name"
+                        />
                         
                     </div>
                      <div className="mb-3">
-                        <label htmlFor="username" clasName="form-label">
+                        <label htmlFor="Username" clasName="form-label">
                             Username
                         </label>
                         <input
                         type={"text"}
                         className="form-control"
                         placeholder="Enter your username"
-                        name="username"/>
+                        name="username"
+                        />
                         
                     </div>
                      <div className="mb-3">
@@ -36,8 +38,14 @@ export default function AddUser() {
                         type={"text"}
                         className="form-control"
                         placeholder="Enter your e-mail address"
-                        name="email"/>
-                        
+                        name="email"
+                        />
+                        <button type="submit" className="btn btn-outline-primary">
+                            Submit
+                        </button>
+                        <button type="submit" className="btn btn-outline-danger mx-2">
+                            Cancel
+                        </button>
                     </div>
                 </div>
 
