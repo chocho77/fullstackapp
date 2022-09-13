@@ -12,6 +12,8 @@ export default function AddUser() {
 
     const onInputChange=(e)=>{
 
+        setUser({[e.target.name]:e.target.value})
+
     }
 
     return (
