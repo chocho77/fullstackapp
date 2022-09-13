@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class UserNotFoundAdvice {
 
     @ResponseBody
-    @ExceptionHandler
+    @ExceptionHandler(UserNotFoundException.class)
     public Map<String, String> exceptionHandler(UserNotFoundException exception) {
 
         Map<String, String> errorMap = new HashMap<>();
