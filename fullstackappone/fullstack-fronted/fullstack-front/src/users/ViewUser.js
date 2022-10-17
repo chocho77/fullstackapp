@@ -5,7 +5,13 @@ export default function ViewUser() {
         <div className="container">
             <div className="row">
                 <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-                    <h2 className="text-center m-4">Register user</h2>
+                    <h2 className="text-center m-4">User Details</h2>
+
+                    <div className="card">
+                        <div className="card-header">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
