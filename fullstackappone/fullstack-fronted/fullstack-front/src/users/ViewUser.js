@@ -9,7 +9,11 @@ export default function ViewUser() {
 
                     <div className="card">
                         <div className="card-header">
-                            
+                            Details of user id :
+                            <ul className="list-group list-group-flush">
+                                
+                            </ul>
+
                         </div>
                     </div>
                 </div>
