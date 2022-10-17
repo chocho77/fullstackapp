@@ -15,6 +15,14 @@ export default function ViewUser() {
                                     <b>Name:</b>
                                     
                                 </li>
+                                <li className="list-group-item">
+                                    <b>Name:</b>
+                                    
+                                </li>
+                                <li className="list-group-item">
+                                    <b>Name:</b>
+                                    
+                                </li>
                             </ul>
 
                         </div>
