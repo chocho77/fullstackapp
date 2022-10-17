@@ -17,18 +17,20 @@ export default function ViewUser() {
                                     
                                 </li>
                                 <li className="list-group-item">
-                                    <b>Name:</b>
+                                    <b>UserName:</b>
                                     
                                 </li>
                                 <li className="list-group-item">
-                                    <b>Name:</b>
+                                    <b>Email:</b>
                                     
                                 </li>
                             </ul>
 
                         </div>
                     </div>
-                    <Link className="btn btn-primary my-2">
+                    <Link className="btn btn-primary my-2"
+                    to={"/"}
+                    >
                         Back to Home
                     </Link>
                 </div>
