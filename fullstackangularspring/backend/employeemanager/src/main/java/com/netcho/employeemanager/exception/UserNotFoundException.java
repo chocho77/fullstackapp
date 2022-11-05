@@ -1,6 +1,6 @@
 package com.netcho.employeemanager.exception;
 
-public class UserNotFoundException {
-    public UserNotFoundException(String s) {
+public class UserNotFoundException extends RuntimeException{
+    public UserNotFoundException(String message) {
     }
 }
