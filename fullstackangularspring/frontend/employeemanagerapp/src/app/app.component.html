@@ -1,6 +1,6 @@
 <nav class="navbar bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand">Navbar</a>
+      <a class="navbar-brand">Employee Manager</a>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="fa fa-envelope float-right">Email : {{employee?.email}}</i></li>
+                    <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Email : {{employee?.email}}</li>
                     <li class="list-group-item"><i class="fa fa-phone float-right"></i>{{employee?.phone}}</li>
                 </ul>
                 <div class="card-body">
@@ -44,3 +44,11 @@
         </div>
     </div>
 </div>
+
+<!--Notification for no employees-->
+<div class="col-lg-12 col-md-12 col-xl-12">
+    <div class="alert alert-info" role="alert">
+        <h4 class="alert-heading">NO EMPLOYEES</h4>
+        <p>No Employees were found.</p>
+    </div>
+</div> 
