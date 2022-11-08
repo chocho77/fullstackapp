@@ -34,13 +34,13 @@ export class AppComponent implements OnInit{
     button.style.display = 'none';
     button.setAttribute('data-toggle','modal');
     if(mode === 'add'){
-      button.setAttribute('data-target', 'addEmployeeModal');
+      button.setAttribute('data-target', '#addEmployeeModal');
     }
     if(mode === 'edit'){
-      button.setAttribute('data-target', 'updateEmployeeModal');
+      button.setAttribute('data-target', '#updateEmployeeModal');
     }
     if(mode === 'delete'){
-      button.setAttribute('data-target', 'deleteEmployeeModal');
+      button.setAttribute('data-target', '#deleteEmployeeModal');
     }
 
   }
