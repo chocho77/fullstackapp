@@ -1,14 +1,18 @@
 <nav class="navbar bg-light">
     <div class="container-fluid">
       <a class="navbar-brand">Employee Manager</a>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul>
+            <li>
+                <a>Add Employee</a>
+            </li>
+        </ul>
+      </div>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
       <div>
-        <div>
-            <button (click)="onOpenModal('add')">Add Employee</button>
-        </div>
         <form>
             <input type="search" />
         </form>
@@ -36,8 +40,8 @@
                 </ul>
                 <div class="card-body">
                     <div class="float-right btn-group btn-group-sm">
-                        <a href="#" class="btn btn-primary tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-pencil"></i> </a>
-                        <a href="#" class="btn btn-secondary tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-times"></i></a>
+                        <a (click)="onOpenModal(employee,'edit')" class="btn btn-primary tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-pencil"></i> </a>
+                        <a (click)="onOpenModal(employee,'delete')" class="btn btn-secondary tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-times"></i></a>
                     </div>
                 </div>
             </div>
